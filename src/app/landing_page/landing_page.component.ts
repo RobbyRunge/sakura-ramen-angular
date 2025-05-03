@@ -6,13 +6,7 @@ import { NavbarComponent } from "./navbar/navbar.component";
   selector: 'app-landingPage',
   standalone: true,
   imports: [CommonModule, NavbarComponent],
-  template: `
-  <section>
-    <app-navbar></app-navbar>
-    <h1>SAKURA RAMEN</h1>
-    <h2>BEST RAMEN IN TOWN</h2>
-  </section>
-  `,
+  templateUrl: './landing_page.component.html',
   styleUrls: ['./landing_page.components.scss']
 })
 export class LandingPageComponent { }
