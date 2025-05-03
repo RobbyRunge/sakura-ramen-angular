@@ -1,0 +1,23 @@
+h1 {
+  font-weight: bold;
+  font-size: 96px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  background-image: url('./../../assets/img/hero_bg.jpg');
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 200px;
+  background-size: cover;
+  background-position: center bottom;
+}
