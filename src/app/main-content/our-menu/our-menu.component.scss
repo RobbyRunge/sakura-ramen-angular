@@ -1,0 +1,48 @@
+.menu-container {
+  background-image: url(./../../../assets/img/section_our_menu_bg.jpg);
+  background-size: cover;
+  padding: 120px 160px 120px 160px;
+
+  .menu-item {
+    gap: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 56px;
+  }
+  
+  .menu-item-middle {
+    gap: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 56px;
+  }
+  
+  .menu-image {
+    width: 352px;
+    height: 352px;
+    border-radius: 8px;
+  }
+  
+  .name-price {
+    font-weight: bold;
+    font-size: 32px;
+    color: #675e54;
+  }
+  
+  .name-price td {
+    align-items: center;
+  }
+  
+  .table-position {
+    padding: 16px 200px 8px 0;
+  }
+  
+  .table-position2 {
+    padding-bottom: 8px;
+  }
+}
+
+
+
