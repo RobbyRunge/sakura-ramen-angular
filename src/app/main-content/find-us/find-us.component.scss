@@ -1,0 +1,27 @@
+h2 {
+  margin-top: 120px;
+  margin-bottom: 0;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 64px;
+  margin-top: 8px;
+
+  .image-marker {
+    height: 24px;
+    margin-right: 5px;
+  }
+
+  .address span {
+    font-size: 24px;
+    font-family: Raleway;
+  }
+}
+
+.map {
+  width: 100%;
+  height: 700px;
+}
