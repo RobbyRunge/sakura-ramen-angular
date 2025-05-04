@@ -1,3 +1,10 @@
+.headline {
+  display: flex;
+  flex-direction: column;
+  margin-top: 160px;
+  align-items: center;
+}
+
 h1 {
   font-weight: bold;
   font-size: 96px;
@@ -7,23 +14,17 @@ h1 {
 h2 {
   font-size: 24px;
   margin: 0;
-  margin-bottom: 30%;
 }
 
 div {
   width: 100%;
 }
 
-section {
+header {
   height: 100vh;
   width: 100%;
   background-image: url('./../../assets/img/hero_bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: white;
 }
