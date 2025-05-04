@@ -1,0 +1,19 @@
+.footer {
+  background-color: black;
+  border-top: 10px solid white;
+  height: 144px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 160px 0 160px;
+
+  .left-image {
+    height: 44px;
+  }
+
+  .right-image {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+  }
+}
