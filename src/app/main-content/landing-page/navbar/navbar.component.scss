@@ -1,7 +1,34 @@
-nav {
+// import form another file
+@import './../../../../styles.scss';
+
+// variable
+$dark-red: #9f0908;
+
+// like a function
+@mixin displayFlexAndAlignItem() {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+// like a function with parameter
+@mixin testParameterByBorder($borderStyle) {
+  border: $borderStyle 2px white;
+  border-radius: 8px;
+}
+
+// like a function with default parameter
+@mixin dFlex($jc: center, $ai: center, $g: px) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $g;
+}
+
+
+nav {
+  // @include displayFlexAndAlignItem(); test with like a function with parameter
+  @include dFlex();
+  // justify-content: space-between; test with like a function with parameter
   height: 112px;
   margin-left: 160px;
   margin-right: 160px;
@@ -12,27 +39,32 @@ nav {
   }
 
   >div {
-    display: flex;
-    align-items: center;
+    @include displayFlexAndAlignItem();
     gap: 24px;
     font-size: 24px;
 
     >a {
+      // @include testParameterByBorder(dotted); // test with parameter
+      color: map-get($link-decoration, color);
+      text-decoration: map-get($link-decoration, text-decoration);
       &:hover {
-        color: #9f0908;
+        color: $dark-red;
       }
     }
   }
 
   .phone_btn {
-    display: flex;
-    align-items: center;
+    @include displayFlexAndAlignItem();
     gap: 10px;
-    background-color: #9f0908;
-    border: solid 2px white;
-    border-radius: 8px;
+    background-color: $dark-red;
+    @include testParameterByBorder(solid);
     padding: 5px;
     cursor: pointer;
+
+    >a {
+      color: map-get($link-decoration, color);
+      text-decoration: map-get($link-decoration, text-decoration);
+    }
 
     &:hover {
       background-color: #ce0d0d;

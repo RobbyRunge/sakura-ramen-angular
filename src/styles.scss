@@ -5,10 +5,10 @@
   scroll-behavior: smooth;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
+$link-decoration: (
+  color: white,
+  text-decoration: none,
+); 
 
 h1 {
   font-weight: bold;
@@ -22,6 +22,7 @@ h2 {
   font-size: 80px;
   color: #a52a2a;
   margin-bottom: 64px;
+
 }
 
 h3 {
