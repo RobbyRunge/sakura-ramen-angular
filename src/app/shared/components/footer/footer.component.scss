@@ -1,3 +1,5 @@
+@import './../../../../styles.scss';
+
 .footer {
   background-color: black;
   border-top: 10px solid white;
@@ -10,4 +12,9 @@
   .left-image {
     height: 44px;
   }
+
+  a {
+    color: map-get($link-decoration, color);
+    text-decoration: map-get($link-decoration, text-decoration);
+  } 
 }
