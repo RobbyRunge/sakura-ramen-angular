@@ -17,7 +17,7 @@ $dark-red: #9f0908;
 }
 
 // like a function with default parameter
-@mixin dFlex($jc: center, $ai: center, $g: px) {
+@mixin dFlex($jc: space-between, $ai: center, $g: px) {
   display: flex;
   justify-content: $jc;
   align-items: $ai;
